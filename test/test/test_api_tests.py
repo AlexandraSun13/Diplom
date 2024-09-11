@@ -4,7 +4,11 @@ import allure
 from conftest import url_1, url_2, token, HEADRS
 
 
-# Поиск книги по фамилии автора
+@allure.epic("Читай-город")
+@allure.suite('API')
+@allure.severity(severity_level='critical')
+@allure.feature('Test 1')
+@allure.title("Поиск книги по фамилии автора")
 def test_api():
     base_url = url_2
     headers = {'authorization': token}
@@ -13,8 +17,12 @@ def test_api():
     print(response.status_code, response.text)
 
 
-# Добавление товара в корзину
-def product_in_card():
+@allure.epic("Читай-город")
+@allure.suite('API')
+@allure.severity(severity_level='blocked')
+@allure.feature('Test 2')
+@allure.title("Добавление товара в корзину")
+def test_product_in_card():
     url = url_1
     payload = json.dumps({
         "id": 2839320,
@@ -31,8 +39,10 @@ def product_in_card():
     print(response.status_code, response.text)
 
 
-# Поиск книги по названию (невалидный)
-
+@allure.epic("Читай-город")
+@allure.suite('API')
+@allure.severity(severity_level='hight')
+@allure.feature('Test 3')
 @allure.title("Поиск книги по названию (Негативный)")
 @allure.description("Выполнение теста на поиск книги с вводом эмоджи")
 def test_search_content():
@@ -42,8 +52,11 @@ def test_search_content():
         assert response.status_code == 200
 
 
-# Найти книгу по ID
-
+@allure.epic("Читай-город")
+@allure.suite('API')
+@allure.severity(severity_level='critical')
+@allure.feature('Test 4')
+@allure.title("Найти книгу по ID")
 def test_search_book_ID():
     base_URL = url_1
     headers = {'authorization': token}
@@ -54,7 +67,11 @@ def test_search_book_ID():
 
 
 # Получить список категорий
-
+@allure.epic("Читай-город")
+@allure.suite('API')
+@allure.severity(severity_level='hight')
+@allure.feature('Test 5')
+@allure.title("Получить список категорий")
 def test_list_category():
     base_URL = url_2
     headers = {'authorization': token}

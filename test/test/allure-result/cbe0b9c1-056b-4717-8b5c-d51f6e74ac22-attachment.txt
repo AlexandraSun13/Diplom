@@ -1,0 +1,30 @@
+Ошибка при проверке пустой корзины: Message: invalid selector
+from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=128.0.6613.137); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00E8D933+25811]
+	(No symbol) [0x00E1E314]
+	(No symbol) [0x00D12523]
+	(No symbol) [0x00D180A4]
+	(No symbol) [0x00D19988]
+	(No symbol) [0x00D19A00]
+	(No symbol) [0x00D570F5]
+	(No symbol) [0x00D5765B]
+	(No symbol) [0x00D96BA2]
+	(No symbol) [0x00D7AD74]
+	(No symbol) [0x00D946F0]
+	(No symbol) [0x00D7AAC6]
+	(No symbol) [0x00D4BEFD]
+	(No symbol) [0x00D4C8FD]
+	GetHandleVerifier [0x0115F143+2981091]
+	GetHandleVerifier [0x011B2FF9+3324825]
+	GetHandleVerifier [0x00F1B32F+605903]
+	GetHandleVerifier [0x00F22CBC+637020]
+	(No symbol) [0x00E26F4D]
+	(No symbol) [0x00E23DD8]
+	(No symbol) [0x00E23F75]
+	(No symbol) [0x00E16406]
+	BaseThreadInitThunk [0x7500FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76FC80CE+286]
+	RtlGetAppContainerNamedObjectPath [0x76FC809E+238]
+
