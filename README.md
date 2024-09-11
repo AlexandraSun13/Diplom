@@ -1,8 +1,13 @@
 # Diplom
 Дипломная работа
+## Задача проекта
+Автоматизация тестирования основного функционала сайта Читай-город:
+поиск товара
+покупка товара
+
 ## Шаги
 
-1. Склонировать проект 'git clone https://github.com/VailaAs/chitai-gorod_project.git'
+1. Склонировать проект 'git clone https://github.com/AlexandraSun13/Diplom.git'
 2. Установить все зависимости из requirements.txt
 3. Скопировать access-token по инструкции ниже.
 3. Запустить тесты 'pytest -s -v --alluredir=allure-result' ИЛИ 'python -m pytest -s -v --alluredir=allure-result'
